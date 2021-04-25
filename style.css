@@ -10,6 +10,10 @@
     display: flex;
 }
 
+.flex-wrapper {
+    display: flex;
+}
+
 .logo img {
     height: calc(1.375rem + 1.5vw);
     margin-right: 1em;
@@ -31,13 +35,18 @@
     border: 2px solid lightblue;
 }
 
-.card-title {
+.card {
     text-align: center;
 }
 
-.icon {
-    width: 50%;
-    margin: 1em;
+/* .card-title {
+    text-align: center;
+} */
+
+.card img {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer {
