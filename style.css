@@ -1,3 +1,32 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-weight: bolder;
+}
+
+h5 {
+    font-size: 1.15rem;
+}
+
+p {
+    font-size: .9rem;
+}
+
+.carousel .col-md-3 {
+    padding: 1em;
+    text-align: center;
+}
+
+.products-section .card .btn {
+    padding: .315rem .15rem;
+}
+
 .header {
     background: lightblue;
 }
@@ -23,27 +52,30 @@ section {
 }
 
 .logo img {
-    height: calc(1.375rem + 1.5vw);
-    margin-right: 1em;
+    height: 100%;
+    margin-right: 6px;
+    position: relative;
+    top: -3px;
 }
 
 .logo h1 {
     line-height: 1;
+    padding-right: .5em;
 }
 
 h2 {
     text-align: center;
 }
 
-.carousel {
+/* .carousel {
     background: lightcoral;
-}
+} */
 
-.products-section {
+/* .products-section {
     /* position: relative;
     top: -2em; */
-    margin: 0;
-}
+    /* margin: 0; */
+/* } */ 
 
 .add-container {
     --bs-gutter-x: 0;
@@ -55,13 +87,13 @@ h2 {
 }
 
 
-.basket {
+/* .basket {
     height: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
-    padding-top: .8em;
-}
+    padding-top: .6em;
+} */
 
 .basket img {
     padding: 0;
@@ -75,17 +107,32 @@ h2 {
 
 .horizontal-add {
     display: block;
-    background-image: url(img/background.jpg);
+    background-image: url(img/squares-hor.jpg);
     background-repeat: no-repeat;
+    background-position-y: center;
     background-size: cover;
     height: 8em;
 }
 
 .vertical-add {
     display: none;
-    background-image: url(img/background.jpg);
+    background-image: url(img/squares-vert.jpg);
     background-repeat: no-repeat;
+    /* background-position: center; */
     background-size: cover;
+}
+
+.carousel-container {
+    padding: 0;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-desktop {
+    display: none;
 }
 
 .section-title {
@@ -96,14 +143,14 @@ h2 {
     border: 2px solid lightblue;
 }
 
-.card {
+.products-section .card {
     text-align: center;
-    padding: 1em;
+    padding: .5em;
     margin-bottom: 1.3em;
     /* max-width: 12em; */
 }
 
-.card-body {
+.products-section .card-body {
     padding: 0;
 }
 
@@ -111,7 +158,7 @@ h2 {
     text-align: center;
 } */
 
-.card img {
+.products-section .card img {
     /* width: 30%; */
     /* margin-left: auto;
     margin-right: auto; */
@@ -120,7 +167,7 @@ h2 {
     padding-top: 0;
 }
 
-.card a {
+.products-section .card a {
     text-decoration: none;
     color: darkslategray;
 }
@@ -148,12 +195,12 @@ h2 {
     color: #000;
 }
 
-.container-fluid span {
+/* .container-fluid span {
     position: relative; 
     top: 4px;
     margin-left: 4px;
     height: 4px;
-}
+} */
 
 .container-fluid p {
     margin-bottom: 0;
@@ -181,9 +228,59 @@ ul li {
     margin: 0;
 }
 
+.mobile-user-nav {
+    display: inline-block;
+}
+
+.mobile-user-nav img {
+    display: inline-block;
+    position: relative;
+    top: -4px;
+}
+
+.mobile-basket-icon {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    padding-top: .5em;
+}
+
+.mobile-basket-icon img {
+    height: 24px;
+}
+
+.mobile-basket-icon p {
+    margin-bottom: 0;
+}
+
+.mobile-basket-icon a {
+    text-decoration: none;
+    color: #000;
+}
+
+.desktop-user-nav {
+    display: none;
+}
+
+.carousel-description {
+    position: absolute;
+    bottom: 0;
+}
 
 @media only screen and (min-width: 768px) {
     .horizontal-add {
+        display: none;
+    }
+
+    .carousel-description {
+        position: static;
+    }
+
+    .carousel-desktop {
+        display: block;
+    }
+
+    .carousel-mobile {
         display: none;
     }
 
@@ -194,6 +291,9 @@ ul li {
     .user-nav {
         display: flex;
     }
+    .carousel .col-md-3 {
+        text-align: left;
+    }
 
     /* .log-in,
     .sign-up {
@@ -201,9 +301,38 @@ ul li {
     } */
 }
 
-@media only screen and (min-width: 1200px) {
-
-    .user-nav {
+@media only screen and (min-width: 992px) {
+    .mobile-user-nav {
+        display: none;
+    }
+    .carousel .col-md-3 {
+        border-right: 2px solid #ccc;
+    }
+    .desktop-user-nav {
         display: flex;
+        text-align: center;
+        font-size: 14px;
+        position: relative;
+        top: 10px;
+    }
+    .desktop-user-nav a {
+        text-decoration: none;
+        color: #000;
+    }
+    .mobile-basket-icon {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .products-section .card .btn {
+        padding: .375rem .35rem;
+        font-size: .95rem;
+    }
+    .products-section .card {
+        padding: .9em;
+    }
+    .mobile-basket-icon {
+        padding-top: .8em;
     }
 }
