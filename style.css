@@ -18,6 +18,23 @@ p {
     font-size: .9rem;
 }
 
+/* Navbar icon hover */
+
+.icon {
+    display: inline-block;
+    background-size: cover;
+}
+.icon-person:hover,
+.icon-person:focus {
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
+
+.log-in img,
+.sign-up img {
+    position: relative;
+    top: -4px;
+}
+
 .carousel .col-md-3 {
     padding: 1em;
     text-align: center;
@@ -217,12 +234,6 @@ h2 {
     flex-basis: 50%;
 }
 
-.log-in img,
-.sign-up img {
-    position: relative;
-    top: -4px;
-}
-
 ul li {
     vertical-align: middle;
     margin: 0;
@@ -255,7 +266,11 @@ ul li {
 
 .mobile-basket-icon a {
     text-decoration: none;
-    color: #000;
+    color: #9ea6ac;
+}
+
+.mobile-basket-icon a:hover {
+    color: #d3d6d9;
 }
 
 .desktop-user-nav {
@@ -317,7 +332,11 @@ ul li {
     }
     .desktop-user-nav a {
         text-decoration: none;
-        color: #000;
+        color: #9ea6ac;
+    }
+    .desktop-user-nav a:hover {
+        text-decoration: none;
+        color: #d3d6d9;
     }
     .mobile-basket-icon {
         display: none;

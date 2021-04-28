@@ -14,11 +14,11 @@
 
     <!-- .................................................................Nav -->
 
-    <header class="sticky-top bg-info">
+    <nav class="sticky-top bg-dark">
       <div class="container-xl g-0 g-sm-4 g-xl-0">
         <div class="row gx-0">
           <div class="col-10 col-sm-11 col-lg-9">
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <subnav class="navbar navbar-expand-lg navbar-dark">
               <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -61,20 +61,20 @@
                   </ul>
                 </div>
               </div>
-            </nav>
+            </subnav>
           </div>
           <div class="col-2 col-sm-1 col-lg-3">
-            <div class="mobile-basket-icon">
+            <subnav class="mobile-basket-icon">
               <a href="#">
                 <img src="icons/shopping_cart_black_24dp.svg" alt="Shopping cart">
                 <p>Basket</p>
               </a>
-            </div>
-            <div class="row desktop-user-nav">
+            </subnav>
+            <subnav class="row desktop-user-nav">
               <div class="col">
                 <a href="#">
-                  <img src="icons/person_black_24dp.svg" alt="Log in">
-                  <p>Log in</p>
+                  <object data="icons/person_black_24dp.svg" class="icon icon-person"></object>
+                  <p style="position: relative; top: -5px;">Log in</p>
                 </a>
               </div>
               <div class="col">
@@ -84,16 +84,16 @@
                 </a>
               </div>
               <div class="col">
-                <a href="">
+                <a href="#">
                   <img src="icons/shopping_cart_black_24dp.svg" alt="Shopping cart">
                   <p>Basket</p>
                 </a>
               </div>
-            </div>
+            </subnav>
           </div>
         </div>
       </div>
-    </header>
+    </nav>
 
     <aside class="container-lg carousel">
         <div class="row">
