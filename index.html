@@ -64,28 +64,28 @@
             </subnav>
           </div>
           <div class="col-2 col-sm-1 col-lg-3">
-            <subnav class="mobile-basket-icon">
+            <subnav class="mobile-basket-icon nav-icon">
               <a href="#">
-                <img src="icons/shopping_cart_black_24dp.svg" alt="Shopping cart">
+                <img src="icons/shopping_cart_black_24dp.svg" alt="Basket">
                 <p>Basket</p>
               </a>
             </subnav>
             <subnav class="row desktop-user-nav">
-              <div class="col">
+              <div class="col nav-icon">
                 <a href="#">
-                  <object data="icons/person_black_24dp.svg" class="icon icon-person"></object>
-                  <p style="position: relative; top: -5px;">Log in</p>
+                  <img src="icons/person_black_24dp.svg" alt="Log in">
+                  <p>Log in</p>
                 </a>
               </div>
-              <div class="col">
+              <div class="col nav-icon">
                 <a href="#">
                   <img src="icons/person_add_black_24dp.svg" alt="Sign up">
                   <p>Sign up</p>
                 </a>
               </div>
-              <div class="col">
+              <div class="col nav-icon">
                 <a href="#">
-                  <img src="icons/shopping_cart_black_24dp.svg" alt="Shopping cart">
+                  <img src="icons/shopping_cart_black_24dp.svg" alt="Basket">
                   <p>Basket</p>
                 </a>
               </div>
@@ -110,10 +110,10 @@
           </div>
         </div>
     </aside>
-    <main class="container-lg main">
+    <main class="container-lg">
 
       <!-- .................................................................Audiobooks -->
-      <section class="row row-cols-md-2" class="products-section" id="audiobooks">
+      <section class="row row-cols-md-2 products" id="audiobooks">
         <div class="col-md-3 add-container vertical-add">
           Add
         </div>
@@ -283,7 +283,7 @@
 
       <!-- .................................................................Podcasts -->
 
-      <section class="row row-cols-md-2" class="products-section" id="podcasts">
+      <section class="row row-cols-md-2 products" id="podcasts">
         <div class="col-md-3 add-container vertical-add">
           Add
         </div>
@@ -466,16 +466,35 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-        <div class="card container-lg footer-content">
-            <div class="card-header">
-              Featured
+    <footer class="footer bg-dark">
+        <div class="container-lg footer-content">
+          <div class="col">
+            <div class="row footer-top-section">
+                <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                <div class="footer-icon-container">
+                  <a href="#">
+                    <img src="icons/auto_stories_black_24dp.svg" alt="Audiobook icon" class="footer-icon">
+                  </a>
+                  <a href="#">
+                    <img src="icons/podcasts_black_24dp.svg" alt="Podcast icon" class="footer-icon">
+                  </a>
+                </div>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <hr>
+            <div class="row footer-bottom-section">
+              <div class="col">
+                <div class="flex-wrapper">
+                    <div class="logo">
+                      <img src="icons/fingerprint_black_24dp.svg" alt="Fingerprint">
+                    </div>
+                    <h5>Logo</h5>
+                </div>
+              </div>
+              <div class="col button-container">
+                <button class="btn btn-light">Contact us</button>
+              </div>
             </div>
+          </div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
