@@ -299,7 +299,16 @@ h2 {
     }
 }
 
-/* Subpage */
+/* Subpage My account */
+
+.subpage-main {
+    padding: 0;
+}
+
+.subpage-title {
+    padding-top: 1em;
+    padding-bottom: .3em;
+}
 
 .account-section {
     -webkit-box-shadow: 4px 4px 6px -1px rgba(154,154,154,0.8); 
@@ -307,43 +316,28 @@ h2 {
     margin-bottom: 2em;
 }
 
-.subpage-main {
-    margin-top: 2em;
-    padding: 0;
-}
-
-.subpage-title {
-    padding-top: 1em;
-    padding-bottom: .5em;
-}
-
 .subpage-main h3 {
     font-family: 'Montserrat', sans-serif;
     padding-left: 1em;
-    margin-bottom: 1em;
+    margin: 1em 0;
+    padding-top: .5em;
+}
+
+.subpage-main h3:first-child {
+    margin-top: .3em;
 }
 
 .custom-card {
     max-width: 180px;
 }
 
+.custom-card .card,
 .custom-card .card img {
     padding: 0;
 }
 
-.custom-card .card {
-    padding: 0;
-}
-
-.custom-card .card-body {
-    padding: .9em;
-}
-
 .custom-card .card-body h5,
-.custom-card .card-body p {
-    margin: 0;
-}
-
+.custom-card .card-body p,
 .custom-card button {
     margin: 0;
 }
@@ -353,17 +347,30 @@ h2 {
     transform: scale(1.02);
     position: relative;
     top: -1px;
-    /* margin-bottom: 1em; */
     padding-top: .5em;
 }
 
+address,
+.details {
+    padding: 0 3em;
+    padding-bottom: 2em;
+}
+
+address a,
+.details a {
+    text-decoration: none;
+    color: darkslategray;
+    font-size: .8rem;
+}
+
+address a:hover,
+.details a:hover,
 .delivery a:hover {
     color: lightblue;
 }
 
-address {
-    padding: 0 3em;
-    padding-bottom: 2em;
+.subpage-products-section {
+    padding: 0 1em;
 }
 
 @media only screen and (min-width: 576px) {
