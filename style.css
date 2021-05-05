@@ -392,3 +392,48 @@ address a:hover,
 }
 
 /* Subpage Form */
+
+.contact-main {
+    background-image: url(img/circles-half.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 4em;
+}
+
+.contact-form {
+    padding: 0 1em;
+}
+
+.custom-text-area,
+.custom-input {
+    border: none;
+    border-radius: 7px;
+}
+
+.custom-input {
+    margin-bottom: -9px;
+}
+
+.custom-text-area {
+    margin-bottom: 2em;
+}
+
+.custom-contact-btn {
+    width: 9em;
+}
+
+.contact-footer {
+    margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .contact-form {
+        padding: 0 5em;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .contact-form {
+        padding: 0 10em;
+    }
+}
