@@ -394,9 +394,9 @@ address a:hover,
 /* Subpage Form */
 
 .contact-main {
-    background-image: url(img/circles-half.jpg);
+    /* background-image: url(img/circles-quart.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
     padding-bottom: 4em;
 }
 
@@ -406,7 +406,8 @@ address a:hover,
 
 .custom-text-area,
 .custom-input {
-    border: none;
+    /* border: none; */
+    border: 3px solid lightblue;
     border-radius: 7px;
 }
 
