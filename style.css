@@ -310,7 +310,7 @@ h2 {
     padding-bottom: 0;
 }
 
-.account-section {
+.subpage-section {
     -webkit-box-shadow: 4px 4px 6px -1px rgba(154,154,154,0.8); 
     box-shadow: 4px 4px 6px -1px rgba(154,154,154,0.8);
     margin-bottom: 2em;
@@ -394,9 +394,7 @@ address a:hover,
 /* Subpage Form */
 
 .contact-main {
-    /* background-image: url(img/circles-quart.jpg);
-    background-repeat: no-repeat;
-    background-position: center; */
+    background: rgb(221, 226, 228);
     padding-bottom: 4em;
 }
 
@@ -406,8 +404,8 @@ address a:hover,
 
 .custom-text-area,
 .custom-input {
-    /* border: none; */
-    border: 3px solid lightblue;
+    border: none;
+    /* border: 3px solid #000; */
     border-radius: 7px;
 }
 
@@ -437,4 +435,54 @@ address a:hover,
     .contact-form {
         padding: 0 10em;
     }
+}
+
+/* Subpage Product */
+
+.product-container {
+    width: 80%;
+    margin: 2em auto 2.5em auto; 
+}
+
+.image-container {
+    padding: 1em;
+}
+
+.product-image {
+    width: 100%;
+}
+
+.description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1em;
+    border-left: 1.5px solid #ccc;
+}
+
+.description-container h4,
+.custom-table {
+    text-align: left;
+}
+
+.custom-table a {
+    color: #4EA5AC;
+    text-decoration: none;
+}
+
+.custom-table a:hover {
+    color: #87DCE3;
+}
+
+.price-container {
+    color: tomato;
+}
+
+.description-container .bottom-container {
+    margin-bottom: 1em;
+}
+
+.product-page-button {
+    background-color: rgb(105, 200, 231);
 }
