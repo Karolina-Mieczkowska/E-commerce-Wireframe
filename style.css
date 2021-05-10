@@ -18,6 +18,15 @@ p {
     font-size: .9rem;
 }
 
+a {
+    color: #4EA5AC;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #87DCE3;
+}
+
 /* Navbar */
 
 .navbar-brand {
@@ -93,6 +102,23 @@ p {
     color: #d3d6d9;
 }
 
+.basket-counter {
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    background: tomato;
+    font-size: 12px;
+    color: #fff;
+    position: relative;
+    top: -30px;
+    right: -57%;
+}
+
+.desktop-counter {
+    top: -37%;
+    right: -57%;
+}
+
 /* Carousel */
 
 .carousel-container {
@@ -116,6 +142,11 @@ p {
 
 .carousel-desktop {
     display: none;
+}
+
+.carousel-control-next, 
+.carousel-control-prev {
+    color: #000;
 }
 
 /* Products */
@@ -402,6 +433,31 @@ address a:hover,
     padding: 0 1em;
 }
 
+.login-form,
+.signin-form {
+    max-width: 30em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1em;
+}
+
+.login-title {
+    padding-top: 3em;
+}
+
+.login-form {
+    margin-bottom: 3em;
+    margin-top: 1em;
+}
+
+.login-btn-wrapper {
+    text-align: center;
+}
+
+.login-btn-wrapper button {
+    width: 15em;
+}
+
 .custom-text-area,
 .custom-input {
     border: none;
@@ -411,6 +467,19 @@ address a:hover,
 
 .custom-input {
     margin-bottom: -9px;
+}
+
+.form-check,
+.signin-form .custom-input:last-child {
+    margin-bottom: 1em;
+}
+
+.login-form .custom-input:last-child {
+    margin-bottom: 2em;
+}
+
+.signin-form a:hover {
+    color: #1b555a;
 }
 
 .custom-text-area {
@@ -428,6 +497,9 @@ address a:hover,
 @media only screen and (min-width: 768px) {
     .contact-form {
         padding: 0 5em;
+    }
+    .signin-form {
+        padding: 0;
     }
 }
 
@@ -485,4 +557,47 @@ address a:hover,
 
 .product-page-button {
     background-color: rgb(105, 200, 231);
+}
+
+/* Basket */
+
+.basket-button-section {
+    padding: 2.5em 5em;
+    text-align: center;
+}
+
+.basket-button-section button {
+    background: tomato;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.5em;
+    transition: transform .4s ease;
+}
+
+.basket-button-section button:hover {
+    background: tomato;
+    transform: scale(1.1);
+}
+
+.basket-button-section button:focus {
+    background: tomato;
+    outline: 0px;
+}
+
+.basket-button-section button:focus {
+    background: tomato;
+    outline: none !important;
+    border: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+@media only screen and (min-width: 992px) {
+    .basket-button-section {
+        text-align: left;
+    }
+
+    .basket-button-section button {
+        font-size: 1.7em;
+    }
 }

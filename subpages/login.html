@@ -44,10 +44,10 @@
                       </ul>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" href="account.html">My account</a>
+                      <a class="nav-link" href="account.html">My account</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="contact.html">Contact</a>
+                      <a class="nav-link active" href="contact.html">Contact</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link mobile-user-nav" href="login.html">Login 
@@ -99,115 +99,27 @@
     </nav>
 
 <!-- .................................................................Main -->
-    <main class="subpage-main container-lg">
-        <h2 class="subpage-title">My Account</h2>
-        <section class="subpage-section">
-            <h3>My Orders</h3>
-            <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-4 row-cols-xl-5 gy-0 gx-2 gx-sm-3 products-section subpage-products-section">
-                <div class="col custom-card">
-                    <div class="card">
-                        <div class="delivery">
-                            Delivery Date
-                            <p class="price"><a href="#">View details</a></p>
-                        </div>
-                        <a href="product.html">
-                            <img src="../img/cover-ribbon.jpg" class="card-img-top" alt="Auto Stories: Material icon by Google">
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                <a href="product.html">Audiobook title</a>
-                                </h5>
-                                <p><a href="#">Audiobook author</a></p>
-                                <p class="price">£17:99</p>
-                            </div>
-                        </a>
-                      <button type="button" class="btn btn-dark">Buy again</button>
-                    </div>
+
+    <main class="contact-main">
+        <div class="container-lg">
+            <h2 class="subpage-title login-title">Log in</h2>
+            <form class="login-form">
+                <div class="mb-3">
+                    <label for="emailInput"></label>
+                    <input type="email" class="form-control custom-input" id="emailInput" placeholder="Email address">
+                    <label for="password"></label>
+                    <input type="password" class="form-control custom-input" id="password" placeholder="Password">
                 </div>
-                <div class="col custom-card">
-                    <div class="card">
-                        <div class="delivery">
-                            Delivery Date
-                            <p class="price"><a href="#">View details</a></p>
-                        </div>
-                        <a href="product.html">
-                            <img src="../img/cover-circle.jpg" class="card-img-top" alt="Book cover">
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                <a href="product.html">Audiobook title</a>
-                                </h5>
-                                <p><a href="#">Audiobook author</a></p>
-                                <p class="price">£17:99</p>
-                            </div>
-                        </a>
-                      <button type="button" class="btn btn-dark">Buy again</button>
-                    </div>
+                <div class="login-btn-wrapper">
+                    <button type="submit" class="btn btn-success custom-contact-btn">Log in</button>
                 </div>
-                <div class="col custom-card">
-                    <div class="card">
-                        <div class="delivery">
-                            Delivery Date
-                            <p class="price"><a href="#">View details</a></p>
-                        </div>
-                        <a href="product.html">
-                            <img src="../img/podcast-cover.jpg" class="card-img-top" alt="Podcast cover">
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                <a href="product.html">Podcast title</a>
-                                </h5>
-                                <p><a href="#">Podcast author</a></p>
-                                <p class="price">£17:99</p>
-                            </div>
-                        </a>
-                      <button type="button" class="btn btn-dark">Buy again</button>
-                    </div>
-                </div>
-              </div>
-        </section>
-        <section class="subpage-section">
-            <h3>Delivery Adress</h3>
-            <address>
-              <div class="address">
-                <p>
-                    Anne Doe
-                  <br>
-                    25 Cornflower Road 
-                  <br>
-                    L6 OBT
-                  <br>
-                    Liverpool
-                  <br>
-                    United Kingdom
-                  </p>
-              </div>
-              <div class="address">
-                <a href="#">Edit</a>
-              </div>
-            </address>
-        </section>        
-        <section class="subpage-section">
-            <h3>My details</h3>
-            <div class="details">
-              <div class="address">
-                <p>
-                    Anne Doe
-                  <br>
-                    25 Cornflower Road 
-                  <br>
-                    L6 OBT
-                  <br>
-                    Liverpool
-                  <br>
-                    United Kingdom
-                  </p>
-              </div>
-              <div class="address">
-                <a href="#">Edit</a>
-              </div>
-            </address>
-          </div>  
-        </section> 
+            </form>
+        </div>
     </main>
-    <footer class="footer bg-dark">
+
+<!-- .................................................................Footer -->
+
+    <footer class="footer contact-footer bg-dark">
         <div class="container-lg footer-content">
           <div class="col">
             <div class="row footer-top-section">
