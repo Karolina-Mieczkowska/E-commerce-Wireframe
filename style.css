@@ -252,84 +252,6 @@ h2 {
     margin-top: -6px;
 }
 
-/* Desktop version */
-
-@media only screen and (min-width: 576px) {
-    .navbar-brand {
-        margin-right: 1em;
-    }
-    .mobile-basket-icon {
-        padding-top: .8em;
-    }
-    .products-section .card {
-        padding: .9em;
-    }
-    .products-section .card .btn {
-        padding: .375rem .35rem;
-        font-size: .95rem;
-    }
-    .footer-bottom-section {
-        padding-right: 3em;
-        padding-left: 3em;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .carousel-mobile {
-        display: none;
-    }
-    .carousel-desktop {
-        display: block;
-    }
-    .products {
-        margin-top: 1em;
-    }
-    .carousel,
-    .products {
-        -webkit-box-shadow: 4px 4px 6px -1px rgba(154,154,154,0.8); 
-        box-shadow: 4px 4px 6px -1px rgba(154,154,154,0.8);
-    }
-    .carousel .col-md-3 {
-        text-align: left;
-    }
-    .carousel-description {
-        position: static;
-    }
-    .horizontal-add {
-        display: none;
-    }
-    .vertical-add {
-        display: block;
-        background-image: url(img/squares-vert.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    .mobile-user-nav {
-        display: none;
-    }
-    .desktop-user-nav {
-        display: flex;
-        text-align: center;
-        font-size: 14px;
-        position: relative;
-        top: 10px;
-    }
-    .desktop-user-nav a {
-        text-decoration: none;
-        color: #9ea6ac;
-    }
-    .desktop-user-nav a:hover {
-        text-decoration: none;
-        color: #d3d6d9;
-    }
-    .mobile-basket-icon {
-        display: none;
-    }
-}
-
 /* Subpage My account */
 
 .subpage-main {
@@ -461,7 +383,6 @@ address a:hover,
 .custom-text-area,
 .custom-input {
     border: none;
-    /* border: 3px solid #000; */
     border-radius: 7px;
 }
 
@@ -492,21 +413,6 @@ address a:hover,
 
 .contact-footer {
     margin: 0;
-}
-
-@media only screen and (min-width: 768px) {
-    .contact-form {
-        padding: 0 5em;
-    }
-    .signin-form {
-        padding: 0;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    .contact-form {
-        padding: 0 10em;
-    }
 }
 
 /* Subpage Product */
@@ -592,7 +498,91 @@ address a:hover,
     box-shadow: none !important;
 }
 
+/* Desktop version */
+
+@media only screen and (min-width: 576px) {
+    .navbar-brand {
+        margin-right: 1em;
+    }
+    .mobile-basket-icon {
+        padding-top: .8em;
+    }
+    .products-section .card {
+        padding: .9em;
+    }
+    .products-section .card .btn {
+        padding: .375rem .35rem;
+        font-size: .95rem;
+    }
+    .footer-bottom-section {
+        padding-right: 3em;
+        padding-left: 3em;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .carousel-mobile {
+        display: none;
+    }
+    .carousel-desktop {
+        display: block;
+    }
+    .products {
+        margin-top: 1em;
+    }
+    .carousel,
+    .products {
+        -webkit-box-shadow: 4px 4px 6px -1px rgba(154,154,154,0.8); 
+        box-shadow: 4px 4px 6px -1px rgba(154,154,154,0.8);
+    }
+    .carousel .col-md-3 {
+        text-align: left;
+    }
+    .carousel-description {
+        position: static;
+    }
+    .horizontal-add {
+        display: none;
+    }
+    .vertical-add {
+        display: block;
+        background-image: url(img/squares-vert.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .contact-form {
+        padding: 0 5em;
+    }
+    .signin-form {
+        padding: 0;
+    }
+}
+
 @media only screen and (min-width: 992px) {
+    .mobile-user-nav {
+        display: none;
+    }
+    .desktop-user-nav {
+        display: flex;
+        text-align: center;
+        font-size: 14px;
+        position: relative;
+        top: 10px;
+    }
+    .desktop-user-nav a {
+        text-decoration: none;
+        color: #9ea6ac;
+    }
+    .desktop-user-nav a:hover {
+        text-decoration: none;
+        color: #d3d6d9;
+    }
+    .mobile-basket-icon {
+        display: none;
+    }
+    .contact-form {
+        padding: 0 10em;
+    }
     .basket-button-section {
         text-align: left;
     }
@@ -601,3 +591,4 @@ address a:hover,
         font-size: 1.7em;
     }
 }
+
