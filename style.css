@@ -69,6 +69,7 @@ a:hover {
     cursor: pointer;
 }
 
+.custom-active-icon,
 .nav-icon:hover,
 .nav-icon:focus {
     filter: brightness(150%) contrast(97%);
@@ -115,14 +116,14 @@ a:hover {
 }
 
 .basket-paragraph {
-    position: absolute;
-    top: 25px;
-    right: 10%;
+    position: relative;
+    top: -15px;
+    right: 0;
 }
 
 .mobile-basket-icon .basket-paragraph {
-    top: 35px;
-    right: 3.5%;
+    top: -15px;
+    right: 0;
 }
 
 .desktop-counter {
@@ -584,6 +585,7 @@ address a:hover,
         text-decoration: none;
         color: #9ea6ac;
     }
+    .custom-active-a,
     .desktop-user-nav a:hover {
         text-decoration: none;
         color: #d3d6d9;
