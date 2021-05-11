@@ -114,6 +114,17 @@ a:hover {
     right: -57%;
 }
 
+.basket-paragraph {
+    position: absolute;
+    top: 25px;
+    right: 10%;
+}
+
+.mobile-basket-icon .basket-paragraph {
+    top: 35px;
+    right: 3.5%;
+}
+
 .desktop-counter {
     top: -37%;
     right: -57%;
